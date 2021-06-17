@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Wassell - Technical Task</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form name="form1">
+     Enter Number <input name="num" id="numEntered" type="text"/>
+    <input type="button" onclick="return f1()" value="Display">
+    <p id="output"></p>
+    </form>
+    
+    <script>
+        function f1()
+        {
+            var val = document.getElementById('numEntered').value;
+            if(val <1 || val > 100 ){
+                alert('Value must be between 1-100');
+                return false;
+            }
+            document.getElementById("output").innerHTML = val;
+        }    
+    </script>
+</body>
+</html>
